@@ -1,0 +1,270 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+         
+        :root {
+            --primary-color: #170938;
+            --accent-color: #515253;
+            --text-color: #333;
+            --bg-color: #3843df;
+            --white: #fff;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), #051b16);
+            color: var(--white);
+            padding: 250px 1rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            animation: fadeInDown 1s ease-out;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        header .contact-links {
+            margin-top: 1rem;
+        }
+
+        header .contact-links a {
+            color: var(--accent-color);
+            text-decoration: none;
+            margin: 0 0.5rem;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        header .contact-links a:hover {
+            color: var(--white);
+        }
+
+        nav {
+            background-color: var(--primary-color);
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 600;
+            margin: 0 1.5rem;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+            transform: translateY(-2px);
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 2rem;
+        }
+
+        #about, #education, #experience, #projects, #skills, #contact {
+            background-color: var(--white);
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            padding: 2rem;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            width: 50px;
+            height: 3px;
+            background-color: var(--accent-color);
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+        }
+
+        .project, .experience, .education {
+            background-color: #fafafa;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project:hover, .experience:hover, .education:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+        }
+
+        .project h3, .experience h3, .education h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .project a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .project a:hover {
+            color: var(--primary-color);
+        }
+
+        #skills ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            list-style: none;
+        }
+
+        #skills li {
+            background-color: #e8f1ee;
+            padding: 0.75rem;
+            border-radius: 6px;
+            text-align: center;
+            font-weight: 600;
+            color: var(--primary-color);
+        
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 2rem 1rem;
+            text-align: center;
+            width: 100%;
+        }
+
+        footer .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 2rem;
+        }
+
+        footer .footer-section {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        footer .footer-section h3 {
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        footer .footer-section p, footer .footer-section a {
+            color: var(--white);
+            opacity: 0.9;
+            text-decoration: none;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        footer .footer-section a:hover {
+            color: var(--accent-color);
+        }
+
+        footer .footer-bottom {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(255,255,255,0.2);
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            nav {
+                padding: 0.5rem;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 0.5rem 1rem;
+            }
+
+            section {
+                padding: 1rem;
+                margin: 1rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .project, .experience, .education {
+                padding: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            nav a {
+                font-size: 0.9rem;
+            }
+
+            #contact input, #contact textarea, #contact button {
+                font-size: 0.9rem;
+            }
+        }
+    
