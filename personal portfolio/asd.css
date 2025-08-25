@@ -1,168 +1,111 @@
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    *{
+      margin: 0px;
+    }
+    body{
+      background-color: rgb(44, 44, 44);
+    }
+    
+    header {
+      color: #bbb;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: black;
+    }
 
-         
-        :root {
-            --primary-color: #170938;
-            --accent-color: #515253;
-            --text-color: #333;
-            --bg-color: #3843df;
-            --white: #fff;
-        }
+    h1 {
+      margin: 0;
+      font-size: 24px;
+    }
 
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
+    nav a {
+      color: rgb(255, 255, 255);
+      margin-left: 20px;
+      text-decoration: none;
+      font-size: 16px;
+    }
 
-        header {
-            background: linear-gradient(135deg, var(--primary-color), #051b16);
-            color: var(--white);
-            padding: 250px 1rem;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
+    nav a:hover {
+      text-decoration: underline;
+      color:#a0ce23;
+      transition: 0.5s;
+    }
 
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-            animation: fadeInDown 1s ease-out;
-        }
+    main{
+        margin: 70px 40px;
+    }
 
-        header p {
-            font-size: 1.2rem;
-            opacity: 0.9;
-            animation: fadeIn 1.5s ease-out;
-        }
+    .intro{
+        font-size: 50px;
+        
+    }
 
-        header .contact-links {
-            margin-top: 1rem;
-        }
+    .field{
+        font-size: 30px;
+    }
 
-        header .contact-links a {
-            color: var(--accent-color);
-            text-decoration: none;
-            margin: 0 0.5rem;
-            font-weight: 600;
-            transition: color 0.3s ease;
-        }
+    .sup{
+        color: #bbb;
+    }
 
-        header .contact-links a:hover {
-            color: var(--white);
-        }
+    .imageee{
+        width: 300px;
+        height: 300px;
+        border-radius: 50%; 
+        margin-right: 15%;
+    }
 
-        nav {
-            background-color: var(--primary-color);
-            padding: 1rem;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
+    section{
+      background-color: #a3a3a3;
+      border-radius: 15px;
+      margin: 0px 70px 10px 70px;
+      padding: 20px;
+      font-family: Courier, sans-serif;
+      box-shadow: black 2px;
+    }
 
-        nav a {
-            color: var(--white);
-            text-decoration: none;
-            font-weight: 600;
-            margin: 0 1.5rem;
-            transition: color 0.3s ease, transform 0.3s ease;
-        }
+    section p{
+      font-size: 17px;
+    }
 
-        nav a:hover {
-            color: var(--accent-color);
-            transform: translateY(-2px);
-        }
+    section h2{
+      font-size: 30px;
+      margin-bottom: 20px;
+      color: rgb(18, 4, 51);
+      font-weight: bolder;
+    }
 
-        section {
-            max-width: 1200px;
-            margin: 2rem auto;
-            padding: 2rem;
-        }
+    section h3{
+      font-size: 24px;
+      color: black;
+    }
 
-        #about, #education, #experience, #projects, #skills, #contact {
-            background-color: var(--white);
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-            padding: 2rem;
-            animation: fadeInUp 1s ease-out;
-        }
 
-        h2 {
-            color: var(--primary-color);
-            font-size: 2rem;
-            margin-bottom: 1rem;
-            position: relative;
-        }
-
-        h2::after {
-            content: '';
-            width: 50px;
-            height: 3px;
-            background-color: var(--accent-color);
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-        }
-
-        .project, .experience, .education {
-            background-color: #fafafa;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-            border-radius: 8px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .project:hover, .experience:hover, .education:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
-        }
-
-        .project h3, .experience h3, .education h3 {
-            color: var(--primary-color);
-            margin-bottom: 0.5rem;
-        }
-
-        .project a {
-            color: var(--accent-color);
-            text-decoration: none;
-            font-weight: 600;
-            transition: color 0.3s ease;
-        }
-
-        .project a:hover {
-            color: var(--primary-color);
-        }
-
-        #skills ul {
+    #skills ul {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 1rem;
             list-style: none;
         }
 
         #skills li {
-            background-color: #e8f1ee;
+            background-color: black;
             padding: 0.75rem;
             border-radius: 6px;
             text-align: center;
-            font-weight: 600;
-            color: var(--primary-color);
+            font-weight: 500;
+            color: #bbb;
         
         }
 
-        footer {
-            background-color: var(--primary-color);
-            color: var(--white);
+     footer {
+            background-color: black;
+            color: white;
             padding: 2rem 1rem;
             text-align: center;
             width: 100%;
+            margin-top: 100px;
         }
 
         footer .footer-content {
@@ -180,13 +123,13 @@
         }
 
         footer .footer-section h3 {
-            color: var(--accent-color);
+            color: #bbb;
             margin-bottom: 1rem;
             font-size: 1.2rem;
         }
 
         footer .footer-section p, footer .footer-section a {
-            color: var(--white);
+            color: white;
             opacity: 0.9;
             text-decoration: none;
             margin-bottom: 0.5rem;
@@ -194,7 +137,7 @@
         }
 
         footer .footer-section a:hover {
-            color: var(--accent-color);
+            color: red;
         }
 
         footer .footer-bottom {
@@ -205,66 +148,3 @@
             opacity: 0.8;
         }
 
-        /* Animations */
-        @keyframes fadeInDown {
-            from { opacity: 0; transform: translateY(-20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2rem;
-            }
-
-            header p {
-                font-size: 1rem;
-            }
-
-            nav {
-                padding: 0.5rem;
-            }
-
-            nav a {
-                display: inline-block;
-                margin: 0.5rem 1rem;
-            }
-
-            section {
-                padding: 1rem;
-                margin: 1rem;
-            }
-
-            h2 {
-                font-size: 1.5rem;
-            }
-
-            .project, .experience, .education {
-                padding: 1rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            header h1 {
-                font-size: 1.5rem;
-            }
-
-            nav a {
-                font-size: 0.9rem;
-            }
-
-            #contact input, #contact textarea, #contact button {
-                font-size: 0.9rem;
-            }
-        }
-    
